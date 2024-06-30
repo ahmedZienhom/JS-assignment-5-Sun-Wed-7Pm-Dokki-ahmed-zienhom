@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>weather</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/media.css"/>
+    </head>
+    <body>
+        <section class="full-site">
+            <div class="py-5">
+                <div class="container-md position-relative">
+                    <div class="d-flex justify-content-between">
+                        <a href="index.html">
+                            <img class="me-2" src="images/logo.png" alt="website logo"/>
+                            <div class="d-inline-block logo-text text-white">
+                                <h1 class="h6 m-0 text-capitalize">weather</h1>
+                                <small>tagline goes here</small>
+                            </div>
+                        </a>
+                        <div>
+                            <button class="btn fa fa-bars text-white"></button>
+                            <ul class="list-unstyled web-ul d-none justify-content-between">
+                                <li class="ms-3 ">
+                                    <a href="index.html" class="active text-capitalize">home</a>
+                                </li>
+                                <li class="ms-3">
+                                    <a href="index.html" class="text-capitalize">news</a>
+                                </li>
+                                <li class="ms-3">
+                                    <a href="index.html" class="text-capitalize">live cameras</a>
+                                </li>
+                                <li class="ms-3">
+                                    <a href="index.html" class="text-capitalize">photos</a>
+                                </li>
+                                <li class="ms-3">
+                                    <a href="index.html" class="text-capitalize">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                        <ul class="list-unstyled text-center rounded-2 my-3 d-none" id="mobileUl">
+                            <li>
+                                <a href="index.html" class="text-capitalize p-4 d-block">home</a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="text-capitalize p-4 d-block">news</a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="text-capitalize p-4 d-block">live camera</a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="text-capitalize p-4 d-block">photos</a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="text-capitalize p-4 d-block">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-body">
+                    <div class="container h-100">
+                        <div class="h-100">
+                            <input type="search" placeholder="find your location" class=" mb-2 border-0 shadow-none"/>
+                            <div class="my-location">
+                                <button class="btn btn-primary w-100 location-btn mb-2">get your location's temprature</button>
+                                <p class="alert no-support d-none alert-danger text-black fs-5 fw-bolder text-center mb-2 text-danger"></p>
+                            </div>
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="first-box">
+                                        <div class="d-flex justify-content-between box-date align-items-center ">
+                                            <p class="m-0">loading</p>
+                                            <p class="m-0">loading</p>
+                                        </div>
+                                        <div class="p-4 fs-6 text-capitalize">
+                                            <div class="mb-4 d-flex">
+                                                <p class="location">loading</p>
+                                            </div>
+                                            <p class="temp fw-bold">
+                                                loading
+                                            </p>
+                                            <img src="images/113.png" alt="weather img"/>
+                                            <p class="state"></p>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="images/icon-umberella.png" alt="precip"/>
+                                                    <span></span>
+
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="images/icon-wind.png" alt="wind speed"/>
+                                                    <span></span>
+
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="images/icon-compass.png" alt="wend deraction"/>
+                                                    <span></span>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="second-box h-100">
+                                    <div class=" box-date text-center">
+                                        <p class="m-0"></p>
+                                    </div>
+                                    <div class="content-box">
+                                        <div class="icon text-center">
+                                            <img alt="weather img">
+                                        </div>
+                                        <p class="max-temp m-0">40<sup>o</sup>c</p>
+                                        <small class="min-temp">25<sup>o</sup></small>
+                                        <p class="state">sunny</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="second-box h-100">
+                                    <div class=" box-date text-center">
+                                        <p class="m-0"></p>
+                                    </div>
+                                    <div class="content-box">
+                                        <div class="icon text-center">
+                                            <img  alt="weather img">
+                                        </div>
+                                        <p class="max-temp m-0">40<sup>o</sup>c</p>
+                                        <small class="min-temp">25<sup>o</sup></small>
+                                        <p class="state">sunny</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="col-md-8 position-relative">
+                                <input type="text" class="border-0 shadow-none" placeholder="Enter your email to subscribe..."/>
+                                <input type="submit" value="subscribe"/>
+                            </div>
+                            <div class="col-md-3 offset-1">
+                                <a href="#">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="colophon">Copyright 2014 ahmed zienhom. Designed by elzoz. All rights reserved</p>
+                    </div>
+                </footer>
+            </section>
+
+
+
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

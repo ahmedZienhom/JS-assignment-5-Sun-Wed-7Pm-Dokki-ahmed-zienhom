@@ -1,0 +1,144 @@
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+a {
+    text-decoration: none;
+    color: #009ad8;
+}
+.logo-text {
+    vertical-align: middle;
+}
+button.fa-bars:hover {
+    color: #009ad8 !important;
+    border: #009ad8 1px solid;
+    border-radius: 30px;
+}
+#mobileUl {
+    background-color: #262936;
+    transition: all 0.3s;
+}
+#mobileUl li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#mobileUl li:first-child a {
+    padding: 20px;
+    display: block;
+    color: #009ad8;
+}
+#mobileUl li a {
+    padding: 20px;
+    display: block;
+    color: white;
+}
+.web-ul li a {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.active, .web-ul li:hover a,  .web-ul li a.active {
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+}
+.site-body {
+    background: url(../images/banner.png),linear-gradient(#1e202b, #1e202b);
+    background-repeat: no-repeat;
+    padding-block: 70px;
+}
+ input[type="search"],input[type="search"]:focus,input[type="text"],input[type="text"]:focus {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    border-radius: 30px;
+}
+input[type="search"]::placeholder,input[type="text"]::placeholder {
+    color: #009ad8;
+}
+.first-box,.third-box {
+    background-color: #323544;
+}
+.second-box {
+    background-color: #262936;
+}
+.box-date {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.temp {
+    font-size: 6.4285714286rem;
+    color: white;
+    margin-right: 30px;
+
+}
+sup {
+    font-size: 50%;
+}
+.state{
+    color: #009ad8;
+}
+.no-bg {
+    background-color: rgba(0, 0, 0, 0);
+}
+.my-location {
+    margin-bottom: 70px;
+}
+.second-box > .content-box {
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+
+.second-box > .content-box .icon {
+    margin-bottom: 50px;
+}
+.max-temp {
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+footer {
+    background: #262936;
+    padding: 50px 0;
+}
+input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+input {
+    outline: none;
+}
+.offset-1  a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 1.4285714286em;
+}
+.offset-1 a:hover {
+    background: #009ad8;
+    color: white;
+}

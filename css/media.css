@@ -1,0 +1,8 @@
+@media screen and (min-width: 990px) {
+    button.fa-bars {
+        display: none !important;
+    }
+    ul.web-ul {
+        display: flex !important;
+    }
+}
