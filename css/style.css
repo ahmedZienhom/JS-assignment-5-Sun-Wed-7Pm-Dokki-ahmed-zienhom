@@ -20,6 +20,8 @@ button.fa-bars:hover {
 }
 #mobileUl {
     background-color: #262936;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 #mobileUl li {
@@ -41,8 +43,11 @@ button.fa-bars:hover {
     border-radius: 30px;
     color: white;
     -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
     font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .active, .web-ul li:hover a,  .web-ul li a.active {
@@ -50,6 +55,8 @@ button.fa-bars:hover {
     color: #009ad8 !important;
 }
 .site-body {
+    background: url(../images/banner.png),-webkit-gradient(linear, left top, left bottom, from(#1e202b), to(#1e202b));
+    background: url(../images/banner.png),-o-linear-gradient(#1e202b, #1e202b);
     background: url(../images/banner.png),linear-gradient(#1e202b, #1e202b);
     background-repeat: no-repeat;
     padding-block: 70px;
@@ -60,6 +67,18 @@ button.fa-bars:hover {
     background: #1e202b;
     color: white;
     border-radius: 30px;
+}
+input[type="search"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder {
+    color: #009ad8;
+}
+input[type="search"]::-moz-placeholder, input[type="text"]::-moz-placeholder {
+    color: #009ad8;
+}
+input[type="search"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder {
+    color: #009ad8;
+}
+input[type="search"]::-ms-input-placeholder, input[type="text"]::-ms-input-placeholder {
+    color: #009ad8;
 }
 input[type="search"]::placeholder,input[type="text"]::placeholder {
     color: #009ad8;
@@ -120,7 +139,6 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 30px;
     color: white;
-    -webkit-appearance: button;
     cursor: pointer;
 }
 input {
@@ -135,6 +153,8 @@ input {
     color: #009ad8;
     text-align: center;
     line-height: 2;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
     font-size: 1.4285714286em;
 }
